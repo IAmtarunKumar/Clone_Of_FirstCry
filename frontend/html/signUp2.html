@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstCry | Sign Up </title>
+    <link rel="stylesheet" href="../css/signup2.css">
+</head>
+<body>
+    <div id="main">
+        <img style="margin-left: 80px; width: 150px;" src="https://cdn.fcglcdn.com/brainbees/images/n/fc-logo-s.jpg" alt="">
+        <div><h4>Register</h4></div>
+        <form action="">
+            <label>Full Name</label><br>
+            <input id="name" style="color: #090909; border:none;   width: 300px; font-size: 16px; text-decoration: none; outline: none;"  type="text" placeholder="Enetr your name">
+            <hr>
+
+            <label>Mobile No.</label><br>
+            <input id="mobile" style="color: #090909; border:none;   width: 300px; font-size: 16px; text-decoration: none; outline: none;"  type="number" placeholder="Enetr your mobile no.">
+            <hr>
+
+            <label>Email ID</label><br>
+            <input id="email" style="color: #090909; border:none;   width: 300px; font-size: 16px; text-decoration: none; outline: none;"  type="email" placeholder="Enetr your Email ID or Mobile No.">
+            <hr>
+
+            <label>Password</label><br>
+            <input id="password" style="color: #090909; border:none;   width: 300px; font-size: 16px; text-decoration: none; outline: none;"  type="password" placeholder="Enetr your password">
+            <hr>
+
+           
+            <!-- <label style="color: #797a79;">Enetr your Email ID or Mobile No.</label><hr><br><br> -->
+            <div>
+                <br>
+            <button id="btn-login">CONTINUE</button><br><br>
+            <!-- <label id="Forgot">Forgot Password?</label><br> -->
+        </div>
+            <!-- <h1>---------OR---------</h1> -->
+            
+           
+            
+
+            
+        </form>
+      
+    </div>
+</body>
+</html>
+
+<script>
+
+    let baseURL = "http://localhost:3000/users/register"
+    let regbtn = document.querySelector("#btn-login")
+
+regbtn.addEventListener("click" , async(event)=>{
+    event.preventDefault()
+
+    let name =  document.querySelector("#name").value
+    let mobile =  document.querySelector("#mobile").value
+    let email =  document.querySelector("#email").value
+    let password =  document.querySelector("#password").value
+
+    let obj = {
+        name,
+        mobile,
+        email,
+        password
+    }
+
+
+
+    console.log(obj)
+
+    try {
+        let res = await fetch(`${baseURL}` ,{
+            method  : "POST",
+            headers : {"Content-Type" : "application/json"},
+            body : JSON.stringify(obj)
+
+        })
+
+    if(res.ok){
+        let data = await res.json()
+        console.log(data)
+    }
+    } catch (error) {
+        console.log(error)
+    }
+})
+</script>
+

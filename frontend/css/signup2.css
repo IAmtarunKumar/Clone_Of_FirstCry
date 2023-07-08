@@ -1,0 +1,49 @@
+/* .main{
+    border: 1px solid red;
+    width: 10%;
+    height: 10%;
+    align-content: center;
+} */
+
+#main{
+    /* border: 1px red solid; */
+    margin:35% 35% 0px 35% ;
+    margin-top: -0%;
+   
+    font-size: 20px;
+    font-family: sans-serif;
+    /* height: 10%; */
+    padding:60px 60px 0px 60px;
+    width: 20%;
+    /* height: ; */
+    
+}
+
+label{
+    font-size: 15px;
+}
+
+.btn{
+    padding:2% ;
+    width: 60%;
+    font-size: 15px;
+
+}
+
+#btn-login{
+    padding:3% ;
+
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color:#ff7043;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 18px;
+    width: 360px; 
+}
+
+
+
+
+

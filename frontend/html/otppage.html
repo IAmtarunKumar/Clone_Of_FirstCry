@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstCry | OTP Page</title>
+    <link rel="stylesheet" href="../css/otppage.css">
+</head>
+<body>
+    <div id="main">
+        <img style="margin-left: 80px; width: 150px;" src="https://cdn.fcglcdn.com/brainbees/images/n/fc-logo-s.jpg" alt="">
+        <div><h4> Register</h4></div>
+        <form action="">
+            <label style="color: rgba(128, 128, 128, 0.671);">We've sent an OTP on your Email ID. Please enter it below to complete the verification.</label><br><br>
+    
+           <input id="num1" style="width: 12%; padding: 10px; font-size: 25px; text-align: center;" type="text" name="" id="">
+
+           <input id="num2" style="width: 12%; padding: 10px; font-size: 25px; text-align: center;" type="text" name="" id="">
+
+           <input id="num3" style="width: 12%; padding: 10px; font-size: 25px; text-align: center;" type="text" name="" id="">
+
+           <input id="num4" style="width: 12%; padding: 10px; font-size: 25px; text-align: center;" type="text" name="" id="">
+
+
+        
+            <div>
+                <br>
+            <button id="btn-login">CONTINUE</button><br><br>
+         
+        </div>
+           
+        </form>
+      
+    </div>
+</body>
+</html>
+<script>
+
+    let baseURL = "http://localhost:3000/users/otp"
+
+    let btn = document.querySelector("#btn-login")
+    btn.addEventListener("click" , async(event)=>{
+        event.preventDefault()
+
+        let num1 = document.querySelector("#num1").value 
+        let num2 = document.querySelector("#num2").value
+        let num3 = document.querySelector("#num3").value
+        let num4 = document.querySelector("#num4").value
+
+        let otp = ""+num1+num2+num3+num4
+
+        // console.log(otp)
+        let obj = {otp}
+        console.log(obj)
+
+
+        try {
+            let res = await fetch(`${baseURL}`,{
+                method : "POST",
+                headers : {"Content-Type" : "application/json"},
+                body : JSON.stringify(obj)
+            })
+
+            if(res.ok){
+                let data = await res.json()
+                console.log(data)
+
+                if(data.msg==="login succesfully"){
+                    window.location.href="../index.html"
+                }else{
+                    alert("Wrong OTP")
+                }
+            }
+        } catch (error) {
+            
+        }
+
+
+
+    })
+
+</script>

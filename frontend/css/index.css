@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* cursor: pointer; */
+    
+}
+body{
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    background-color:#f5f5f5;
+}
+#img-1 img{
+    width: 100%;
+}
+#frist{
+    /* border: red solid; */
+    display:grid;
+    /* align-items: center; */
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    background-color: white;
+
+    
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.size{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.box{
+    /* border: 2px solid blue; */
+    /* width:80% ; */
+    /* height: 99%; */
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;  
+     /* padding-bottom: 20px; */
+     
+}
+.size~h1{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.view{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    margin: 15px 0px 15px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.splash{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle
+}
+#summer{
+    /* margin: 0;
+    padding: 0; */
+    display: flex;
+   
+}
+.children{
+    width: 193px;
+   /* vertical-align:middle;  */
+    display: block;
+   
+}
+
+#beloved{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    
+    
+}
+.print{
+    width: 165px;
+ 
+    display: block;
+
+}
+
+#tweens{
+    margin-top: 15px;
+}
+.fash{
+    width: 100%;
+   
+    vertical-align: middle;
+    
+ }  
+ .child{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+
+ .child-1{
+    width: 100%;
+ }
+
+ .Ace{
+    display: flex;
+
+ }
+ .chsma{
+    display: flex;
+    /* padding: 10px; */
+    gap: 20px;
+    background-color: white;
+    /* cursor: p; */
+
+ }
+
+
+#tarun{
+    margin-bottom: -5px;
+}
+
+.Ace img{
+    
+    width: 100%;
+}
+#main{
+    background-color: white;
+}
+/* .baby{
+    border: 1px solid red;
+   
+    
+} */
+
+.baby-1{
+    /* border: 1px solid red; */
+    display: flex;
+    
+}
+.baby-1 img{
+    width: 192px;
+    /* border: 1px solid red; */
+    
+}
+
+#tarun-1{
+    margin-bottom: -5;
+    /* border: 1px solid red; */
+    
+}
+.baby-2 img{
+    /* grid-template-columns: repeat(6,1fr); */
+    /* display: grid; */
+    width: 150px;
+    border: 1px solid red; 
+}
+
+.baby-4 {
+    /* border: 1px solid red;  */
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    width: 50px;
+}
+
+.baby-4 img{
+    
+    width: 169px;
+    /* border: 1px solid red; */
+}
+
+.baby-11 img{
+    width: 220px;
+    /* border: 1px solid red; */
+    
+}
+
+.baby-44 img{
+    width: 220px;
+    /* border: 1px solid red; */
+    
+}
+
+.baby-55 img{
+    width: 270px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(5,1fr); */
+    /* display: block; */
+    vertical-align: middle;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+    margin: -2px;
+
+    
+}
+.baby-55{
+    /* border: 1px solid red; */
+    margin-top: -4px;
+}
+
+.baby-66 img{
+    width: 220px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(5,1fr); */
+    /* display: block; */
+    vertical-align: middle;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+    margin: -2px;
+
+    
+}
+
+.baby-66{
+    /* border: 1px solid red; */
+    margin-top: -4px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 40px ;
+    padding-bottom: 20px;
+}
+.new{
+    /* border: 1px solid red; */
+    /* display: flex; */
+    /* gap: 20px; */
+    margin-left: 60px; 
+    /* align-items: center; */
+    margin-right: 40px; 
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+
+} 
+
+.new img{
+    /* border: 1px solid red; */
+    width: 609px;
+    border-radius: 10px;
+    
+}
+.new-1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 35px;
+}
+
+.image img{
+    width: 100%;
+    padding: 50px;
+}
