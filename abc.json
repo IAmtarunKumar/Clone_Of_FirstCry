@@ -1,0 +1,43 @@
+[{
+    "img" : "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11733668a.webp",
+    "title" : "Hola Bonita Full Sleeves Cable Knit Sweater Dress- Sky Blue",
+    "price" : "6000",
+    "discount" : "25",
+    "age" : "7",
+    "color" : "Sky Blue",
+    "subcategory" : "Frocks and Dresses",
+    "material" : "Cotton",
+    "gender" : "Male",
+    "ageRange" : "8 to 10",
+    "priceRange" : "500 to 1000",
+    "discountRange" : "40 to 50"
+},
+{
+    "img" : "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11355152a.webp",
+    "title" : "Hola Bonita Full Sleeves Overlap Dress With A Ring Detail - Navy",
+    "price" : "5000",
+    "discount" : "35",
+    "age" : "9",
+    "color" : "Navy",
+    "subcategory" : "Tops and T-shirts",
+    "material" : "Polyester",
+    "gender" : "Male",
+    "ageRange" : "4 to 6",
+    "priceRange" : "0 to 250",
+    "discountRange" : "20 to 30"
+},
+{
+    "img" : "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12237816a.jpg",
+    "title" : "Hola Bonita Allover Print Dress With Full Sleeves Tie Up Jacket - Pink",
+    "price" : "863",
+    "discount" : "45",
+    "age" : "10",
+    "color" : "Pink",
+    "subcategory" : "Tops and T-shirts",
+    "material" : "Polyester",
+    "gender" : "Female",
+    "ageRange" : "6 to 8",
+    "priceRange" : "250 to 500",
+    "discountRange" : "30 to 40"
+}
+]

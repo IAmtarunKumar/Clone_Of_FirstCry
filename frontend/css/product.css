@@ -42,10 +42,53 @@
     border: 1px solid#373737 ;
     padding: 15px;
     margin-left: -5px;
-    /* margin-top: 8px; */
+    /* margin-top: 8px; */  
+}
+
+
+/* //menu hide and display  */
+.maindisplayDiv{
+    border: 2px solid rgba(0, 0, 0, 0.139);
+    display: none;
+ 
+}
+
+.displayDiv{
+margin-left: 30px;
+padding: 15px;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+
+
+
+}
+
+.displayDiv>div input,span{
+    margin-top: 10px;
+    margin-bottom: 10px;
     
+    /* padding: 20px; */
+   
+}
+.displayDiv>div>input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+   
     
 }
+
+.displayDiv span{
+    margin-right: 10px;
+    color : rgb(124, 122, 122);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+
+}
+
+
+
+
 #main{
     grid-template-columns: repeat(4,1fr);
     display: grid;
