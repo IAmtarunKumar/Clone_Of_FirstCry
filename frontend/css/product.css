@@ -45,6 +45,20 @@
     /* margin-top: 8px; */  
 }
 
+.select-filter{
+    font-size: 16px; 
+    padding: 4px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: #fff;
+    color: #333; 
+}
+#pincode{
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
 
 /* //menu hide and display  */
 .maindisplayDiv{
@@ -102,4 +116,91 @@ body{
 
 #main>div>img{
     width: 100%;
+}
+
+.append{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 5%;
+
+    gap: 20px;
+    background-color: #3d3d3d;
+    padding: 30px
+
+}
+.append>div{
+    /* border: 1px solid red; */
+    padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      background-color: white;
+}
+.append>div>img{
+   border-radius: 10px;
+   width: 80%;
+   margin-left: 10%;
+}
+.title{
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    font-family:   Arial, sans-serif;
+     margin-bottom: 10px;
+}
+.priceSection{
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+
+}
+
+.priceSection>div:nth-child(1){
+
+    font-size: 20px;
+    font-weight: bold;
+     
+     padding-right: 15px;
+     border-right: 2px solid black;
+
+}
+
+.priceSection>div:nth-child(2){
+
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    
+      padding-left: 15px;
+   
+
+}
+.clubPrice{
+    text-align: center;
+    color: rgb(5, 5, 75);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.buttonSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+
+    margin-top: 10px;
+     padding: 8px 20px;
+      border: none;
+      background-color: #007BFF; /* Blue color, you can change it */
+      color: #fff; /* Text color */
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #0056b3;
 }

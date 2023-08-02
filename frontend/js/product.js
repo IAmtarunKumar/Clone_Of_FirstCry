@@ -28,13 +28,21 @@ async function showData(data) {
     div.innerHTML = `
 
 <img src=${item.img} alt="">
-<p>${item.title}</p>
-<span>${item.price}</span>
-<span><strike>${item.price}</strike></span>
-<p>club price : <span>${item.price}</span></p>
+<p class="title">${item.title}</p>
 
-<button>Add to Cart</button>
-<button>Shortlist</button>
+<hr>
+<div class="priceSection">
+<div> ₹ ${item.price}</div>
+<div><strike>  ${item.price}</strike></div>
+</div>
+
+<hr>
+<p class="clubPrice"> <img width="20%" src="https://cdn.fcglcdn.com/brainbees/images/pdpcl_club_logo.jpg" alt=""> Price : <span>${item.price}</span></p>
+
+<div class="buttonSection">
+<button class="btn cart" >Add to Cart</button>
+<button class="btn shortlist" >Shortlist</button>
+</div>
 `;
 
     appendDiv.append(div);
